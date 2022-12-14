@@ -21,7 +21,6 @@ const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
 
   const { t } = useTranslation(["common", "extra"]);
-  t('testing')
 
   return (
     <>
