@@ -8,17 +8,19 @@ import { trpc } from "../utils/trpc";
 
 export const getServerSideProps = async ({ locale }: { locale: string }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common"], nextI18nConfig, [
-      "en",
-      "sv",
-    ])),
+    ...(await serverSideTranslations(
+      locale,
+      ["common", "extra"],
+      nextI18nConfig,
+      ["en", "sv"]
+    )),
   },
 });
 
 const Home: NextPage = () => {
   const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
 
-  const { t } = useTranslation("common");
+  const { t } = useTranslation(["common", "extra"]);
 
   return (
     <>
