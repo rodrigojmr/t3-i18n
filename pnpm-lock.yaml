@@ -14,7 +14,7 @@ specifiers:
   autoprefixer: ^10.4.7
   eslint: 8.22.0
   eslint-config-next: 12.3.1
-  i18next: ^22.4.1
+  i18next: 22.4.1
   next: 12.3.1
   next-i18next: ^13.0.1
   postcss: ^8.4.14
@@ -34,12 +34,12 @@ dependencies:
   '@trpc/next': 10.0.0-proxy-beta.17_dzic5qqu4g5njip5df4nsnow4e
   '@trpc/react': 10.0.0-proxy-beta.17_toauwijr5xrg2tfgkv2b5sjcly
   '@trpc/server': 10.0.0-proxy-beta.17
-  i18next: 22.4.5
+  i18next: 22.4.1
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
-  next-i18next: 13.0.1_6vi3xjwa5neilj6rwcacp3oke4
+  next-i18next: 13.0.1_z47o7unntzgokd7izwmmlwzpci
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-i18next: 12.1.1_ewanii43wbrufvukcu3uzq3hsy
+  react-i18next: 12.1.1_uxsidv4trtxnjpi4tvzcrtfu5e
   superjson: 1.9.1
   zod: 3.19.1
 
@@ -55,7 +55,7 @@ devDependencies:
   postcss: 8.4.18
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
-  tailwindcss: 3.1.8_postcss@8.4.18
+  tailwindcss: 3.1.8
   typescript: 4.8.4
 
 packages:
@@ -1457,8 +1457,8 @@ packages:
     resolution: {integrity: sha512-gur0HAEkVDeUgZ9WNUcACYYl2N5FUt0C6bQCWsFPc+IYMXYWfiFQa8QQ930QAVYf71I75Ptl4XqQo5sl/u6/mA==}
     dev: false
 
-  /i18next/22.4.5:
-    resolution: {integrity: sha512-Kc+Ow0guRetUq+kv02tj0Yof9zveROPBAmJ8UxxNODLVBRSwsM4iD0Gw3BEieOmkWemF6clU3K1fbnCuTqiN2Q==}
+  /i18next/22.4.1:
+    resolution: {integrity: sha512-BZWjrTX+OVaSxV5s94s2M+7wSlevdPgNtjeL/xXHl0CKkPGyjHNlkN6eN+0e0ex+EO8ec57OALRDUpiSSCo54g==}
     dependencies:
       '@babel/runtime': 7.20.6
     dev: false
@@ -1736,7 +1736,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-i18next/13.0.1_6vi3xjwa5neilj6rwcacp3oke4:
+  /next-i18next/13.0.1_z47o7unntzgokd7izwmmlwzpci:
     resolution: {integrity: sha512-GnywgEQBvXZFUJAwgg8hKJw6khl7yo3qjZkgpX2atJ5Zv8l9kpVdy5RSIc8hiVImIZVwgOfoZ3YTyoWqcP4+Aw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1749,11 +1749,11 @@ packages:
       '@types/hoist-non-react-statics': 3.3.1
       core-js: 3.25.5
       hoist-non-react-statics: 3.3.2
-      i18next: 22.4.5
+      i18next: 22.4.1
       i18next-fs-backend: 2.1.0
       next: 12.3.1_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
-      react-i18next: 12.1.1_ewanii43wbrufvukcu3uzq3hsy
+      react-i18next: 12.1.1_uxsidv4trtxnjpi4tvzcrtfu5e
     dev: false
 
   /next/12.3.1_biqbaboplfbrettd7655fr4n2y:
@@ -2085,7 +2085,7 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-i18next/12.1.1_ewanii43wbrufvukcu3uzq3hsy:
+  /react-i18next/12.1.1_uxsidv4trtxnjpi4tvzcrtfu5e:
     resolution: {integrity: sha512-mFdieOI0LDy84q3JuZU6Aou1DoWW2fhapcTGeBS8+vWSJuViuoCLQAMYSb0QoHhXS8B0WKUOPpx4cffAP7r/aA==}
     peerDependencies:
       i18next: '>= 19.0.0'
@@ -2100,7 +2100,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.19.4
       html-parse-stringify: 3.0.1
-      i18next: 22.4.5
+      i18next: 22.4.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
@@ -2331,12 +2331,10 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /tailwindcss/3.1.8_postcss@8.4.18:
+  /tailwindcss/3.1.8:
     resolution: {integrity: sha512-YSneUCZSFDYMwk+TGq8qYFdCA3yfBRdBlS7txSq0LUmzyeqRe3a8fBQzbz9M3WS/iFT4BNf/nmw9mEzrnSaC0g==}
     engines: {node: '>=12.13.0'}
     hasBin: true
-    peerDependencies:
-      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
